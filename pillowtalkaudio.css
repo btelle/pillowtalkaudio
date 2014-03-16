@@ -8,7 +8,8 @@ html  {
 
 body  {
 	font-family:"Segoe UI",Frutiger,"Frutiger Linotype","Dejavu Sans","Helvetica Neue",Arial,sans-serif!important;
-	font-weight:normal!important
+	font-weight:normal!important;
+	background-color: #1C2840;
 }
 
 body,.wiki-page .md,body .side .md h6:nth-of-type(1)  {
@@ -23,6 +24,10 @@ body,.wiki-page .md,body .side .md h6:nth-of-type(1)  {
 	font-size:18px!important
 }
 
+.panestack-title .title {
+	color: #FAFAFA;
+}
+
 .side .titlebox,#sr-header-area,#header-bottom-left .tabmenu,.tabmenu.formtab,#header-bottom-right,.pref-lang,.side .sidebox .morelink,.side .usertext-body .md,.side .sidecontentbox .helplink,.midcol,.panestack-title,.panestack-title .title,.menuarea,.commentarea .usertext-edit:before,.markdownEditor a,.commentingAs,.usertext-edit .bottom-area a,.comment-visits-box .title,.footer,.submit-page .roundfield,.submit-page .infobar,.submit-page .roundfield label,#RESDropdownOptions,#image-preview-list,#image-upload,.btn.right,.wiki-page .pageactions,#search-expando,body:not(.search-page) #search input[type="text"],#searchexpando,.raisedbox,.searchpane,.hover-bubble,.deepthread  {
 	font-size:12px!important
 }
@@ -31,9 +36,11 @@ body,.wiki-page .md,body .side .md h6:nth-of-type(1)  {
 	font-size:10px!important
 }
 
-a:hover,a:visited:hover  {
+a:hover  {
 	color:#556892
 }
+
+
 
 input  {
 	border:1px solid #C1BFBF!important
@@ -100,6 +107,18 @@ input  {
 	padding:0px 2px!important
 }
 
+.tagline a {
+	color: #949DC7;
+}
+
+.tagline, .entry .buttons li a, .domain a {
+	color: #AAAAAA;
+}
+
+.domain a {
+	margin-top: -3px;
+}
+
 a[href$="#spoiler"]  {
 	background:#414a5e!important;
 	color:#414a5e!important;
@@ -140,7 +159,7 @@ a[href$="#spoiler"][title]::before  {
 }
 
 .md h2,.commentarea h2,.wiki-page .wiki-page-content .md .wiki h2,.flairselector h2  {
-	color:#000000!important;
+	color:#000000;
 	border-bottom:1px solid #BDBAB4;
 	letter-spacing:2px;
 	text-transform:uppercase;
@@ -151,7 +170,7 @@ a[href$="#spoiler"][title]::before  {
 }
 
 .md h3,.commentarea h3,.wiki-page .wiki-page-content .md .wiki h3,.sidecontentbox .title h1,.submit-page .title,.submit_text h1  {
-	color:#000000!important;
+	color:#FAFAFA;
 	border-bottom:1px solid #BDBAB4;
 	letter-spacing:2px;
 	text-transform:uppercase;
@@ -175,6 +194,14 @@ a[href$="#spoiler"][title]::before  {
 
 .side blockquote blockquote blockquote  {
 	top:117px
+}
+
+.sidebox .spacer {
+	background-color: none;
+}
+
+.sidebox .spacer a {
+	top: 7px;
 }
 
 #header-bottom-left .tabmenu,.tabmenu.formtab,a[name=content]  {
@@ -306,9 +333,9 @@ body:not(.search-page) #search input[type="text"]  {
 #searchexpando  {
 	border-radius:0px;
 	border-color:#C1BFBF;
-	background-color:#F5F5F5;
+	background-color:#051126;
 	position:absolute;
-	top: 384px;
+	top: 379px;
 	width: 290px;
 	z-index:200;
 	padding:5px
@@ -380,10 +407,9 @@ blockquote blockquote blockquote  {
 	z-index:1;
 	height:20px;
 	line-height:20px;
-	padding:0;
-	padding-left:10px;
-	background-color:#E9E9E9;
-	margin:0
+	margin-top: -8px;
+    padding: 15px 0 0 10px;
+	background-color: #051126;
 }
 
 #header-bottom-left .tabmenu,.tabmenu.formtab  {
@@ -399,12 +425,12 @@ blockquote blockquote blockquote  {
 }
 
 .linkinfo  {
-	background-color:#FFF;
+	background-color:#556892;
 	color:#363636;
 	text-align:center;
 	padding:0px;
 	border:0;
-	margin:0 auto 0 auto;
+	margin:0 auto 3px auto;
 	border-radius:0px!important
 }
 
@@ -420,7 +446,8 @@ blockquote blockquote blockquote  {
 .linkinfo .score  {
 	display:block;
 	min-width:80px;
-	margin-left:30px!important
+	margin-left:30px!important;
+	color: #FAFAFA;
 }
 
 .linkinfo .upvotes,.linkinfo .downvotes,.linkinfo .score  {
@@ -432,8 +459,8 @@ blockquote blockquote blockquote  {
 
 .linkinfo .shortlink  {
 	clear:both!important;
-	background:#F5F5F5;
-	color:#333;
+	background:#556892;
+	color:#FAFAFA;
 	padding:5px;
 	margin:0;
 	text-align:center
@@ -489,7 +516,7 @@ body .linklisting  {
 .linklisting .odd  {
 	overflow:hidden!important;
 	padding:0px 0px 0px 10px!important;
-	background-color:#FAFAFA;
+	background-color:#303E5C;
 	min-height:50px!important;
 	margin:0px;
 	border-bottom:solid 1px #E9E9E9
@@ -498,22 +525,22 @@ body .linklisting  {
 .linklisting .even  {
 	overflow:hidden!important;
 	padding:0px 0px 0px 10px!important;
-	background-color:#F5F5F5;
+	background-color:#455882;
 	min-height:50px!important;
 	margin:0px;
 	border-bottom:solid 1px #E9E9E9
 }
 
 .thing .title:visited  {
-	color:#B0C2CE!important
+	color:#BB9AE0;
 }
 
 .thing .title  {
-	color:#414a5e!important
+	color:#E0E0E0;
 }
 
 .thing .title:hover,.thing .title:visited:hover  {
-	color:#556892!important
+	color:#BCBEE0;
 }
 
 p.title  {
@@ -521,9 +548,11 @@ p.title  {
 }
 
 .expando-button  {
-	background-color:transparent;
-	height:16px;
-	width:16px
+	display: none;
+}
+
+.nsfw-stamp acronym {
+	color: #AC6765;
 }
 
 .expando-button.selftext.collapsed  {
@@ -700,6 +729,19 @@ body .content .sitetable .thing.spam,body .sitetable .thing.spam.deleted.link.se
 	margin:0 0 10px 36px
 }
 
+.link .usertext .md, .md, .markhelp {
+	color: #FAFAFA;
+	background: none;
+}
+
+.link.last-clicked {
+	border: none;
+}
+
+table.md tr:first-child td em {
+	color: #000000;
+}
+
 body .content .md blockquote  {
 	display:block;
 	background-color:#EEE;
@@ -716,7 +758,8 @@ body .content .md blockquote  {
 }
 
 .md pre  {
-	background-color:#F5F5F5!important;
+	background-color:#F5F5F5;
+	color: #565656;
 	border-left:31px solid #414a5e;
 	position:relative;
 	margin-top:25px;
@@ -749,7 +792,7 @@ body .content .md blockquote  {
 
 .md pre:before  {
 	height:100%;
-	color:white;
+	color:#000000;
 	position:absolute;
 	left:-28px;
 	width:25px;
@@ -779,12 +822,12 @@ body .comment  {
 }
 
 body .comment,body .comment .comment .comment,body .comment .comment .comment .comment .comment,body .comment .comment .comment .comment .comment .comment .comment,body .comment .comment .comment .comment .comment .comment .comment .comment .comment,.res-commentBoxes .content .comment,.res-commentBoxes .content .comment .comment .comment,.res-commentBoxes .content .comment .comment .comment .comment .comment,.res-commentBoxes .content .comment .comment .comment .comment .comment .comment .comment,.res-commentBoxes .content .comment .comment .comment .comment .comment .comment .comment .comment .comment  {
-	background-color:#F5F5F5!important;
+	background-color: #303E5C;
 	border-radius:0!important
 }
 
 .comment .comment,.comment .comment .comment .comment,.comment .comment .comment .comment .comment .comment,.comment .comment .comment .comment .comment .comment .comment .comment,.comment .comment .comment .comment .comment .comment .comment .comment .comment .comment,.res-commentBoxes .content .comment .comment,.res-commentBoxes .content .comment .comment .comment .comment,.res-commentBoxes .content .comment .comment .comment .comment .comment .comment,.res-commentBoxes .content .comment .comment .comment .comment .comment .comment .comment .comment,.res-commentBoxes .content .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment  {
-	background-color:#fff!important;
+	background-color: #1C2840;
 	border-radius:0!important
 }
 
@@ -920,16 +963,15 @@ div.wiki div.toc  {
 
 body div.side  {
 	margin:35px 0 0 0;
-	border-left:solid 20px #E9E9E9;
-	border-bottom:solid 20px #E9E9E9;
-	background:url(http://a.thumbs.redditmedia.com/WyS_TiHRY3KM3XNf.png) no-repeat;
+	border-left:solid 20px #051126;
+	border-bottom:solid 20px #051126;
+	background:url(http://a.thumbs.redditmedia.com/WyS_TiHRY3KM3XNf.png) no-repeat #1C2840;
 	padding-top:200px
 }
 
 .side .sidecontentbox a.helplink  {
 	float:none;
 	margin-top:4px;
-	background-color:#414a5e!important;
 	color:#FFF;
 	display:block;
 	letter-spacing:2px;
@@ -985,20 +1027,21 @@ body .morelink:hover  {
 	background:url(http://a.thumbs.redditmedia.com/BAvFzqN28gRvwVRT.png) no-repeat top left;
 	background-position:4px -12935px;
 	width:262px;
-	background-color:#414a5e
 }
 
 .submit-text .morelink  {
 	background:url(http://a.thumbs.redditmedia.com/BAvFzqN28gRvwVRT.png) no-repeat top left;
 	background-position:4px -2177px;
 	width:262px;
-	background-color:#414a5e
 }
 
 .create .morelink  {
 	background:url(http://a.thumbs.redditmedia.com/BAvFzqN28gRvwVRT.png) no-repeat top left;
 	background-position:2px -16367px;
-	background-color:#414a5e
+}
+
+form.toggle.flairtoggle {
+	background: none;
 }
 
 h1.redditname  {
@@ -1157,6 +1200,16 @@ h1.redditname:hover  {
 	margin:0px 0 5px 0!important;
 	padding:5px
 }
+
+.side .spacer {
+	color: #DFDFDF;
+}
+
+.side h2 {
+	color: #DFDFDF;
+}
+
+
 
 .flairselector.drop-choices.active  {
 	border:0;
@@ -2804,11 +2857,6 @@ a[href="#icon-zoom-out"]::before  {
 	vertical-align:bottom
 }
 
-a.author[href$="/lemondaze"]  {
-	color:#488214;
-	font-weight:bold
-}
-
 .flair-mod  {
 	background:#e866af!important;
 	color:#ffffff!important;
@@ -2840,11 +2888,6 @@ a.author[href$="/lemondaze"]  {
 	display:none
 }
 
-a.author[href$="/AutoModerator"]  {
-	color:#488214;
-	font-weight:bold
-}
-
 .titlebox .word  {
 	display:none
 }
@@ -2857,8 +2900,7 @@ a.author[href$="/AutoModerator"]  {
 	content:" in the mood for sweet talk"
 }
 
-a.author[href$="/Typicalchaz"]  {
+a.author[href$="/lemondaze"], a.author[href$="/AutoModerator"], a.author[href$="/Typicalchaz"]  {
 	color:#488214;
 	font-weight:bold
 }
-
