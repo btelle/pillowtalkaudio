@@ -263,7 +263,12 @@ a[href$="#spoiler"][title]::before  {
 	top:auto;
 	z-index:auto;
 	background:#414a5e;
-	left:0px
+	left:0px;
+	margin-bottom: 3px
+}
+
+.login-form-side #remember-me {
+	font-size: 10pt;
 }
 
 #header #userbarToggle  {
