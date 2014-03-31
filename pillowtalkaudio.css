@@ -9,7 +9,7 @@ html  {
 body  {
 	font-family:"Segoe UI",Frutiger,"Frutiger Linotype","Dejavu Sans","Helvetica Neue",Arial,sans-serif!important;
 	font-weight:normal!important;
-	background-color: #202326;
+	background-color: #292929;
 }
 
 body,.wiki-page .md,body .side .md h6:nth-of-type(1)  {
@@ -21,7 +21,12 @@ body,.wiki-page .md,body .side .md h6:nth-of-type(1)  {
 }
 
 .hover.pagename.redditname,.thing .title,.submit-page .roundfield .title  {
-	font-size:18px!important
+	font-size:18px!important;
+}
+
+.hover.pagename.redditname {
+	width: 412px;
+	height: 260px;
 }
 
 .panestack-title .title {
@@ -39,8 +44,6 @@ body,.wiki-page .md,body .side .md h6:nth-of-type(1)  {
 a:hover  {
 	color:#556892
 }
-
-
 
 input  {
 	border:1px solid #C1BFBF!important
@@ -181,9 +184,9 @@ a[href$="#spoiler"][title]::before  {
 }
 
 #header  {
-	background:url(http://e.thumbs.redditmedia.com/9rxYq8cYIH9vGeBp.png) no-repeat bottom left;
-	background-color:#414a5e;
-	border:0
+	background-color:#293645;
+	border:0;
+	height: 280px;
 }
 
 #header-img  {
@@ -292,7 +295,7 @@ a[href$="#spoiler"][title]::before  {
 
 #header-bottom-right  {
 	height:18px;
-	background-color:#414a5e;
+	background-color: #293645;
 	padding:2px!important;
 	color:#FFF;
 	letter-spacing:1px;
@@ -338,9 +341,9 @@ body:not(.search-page) #search input[type="text"]  {
 #searchexpando  {
 	border-radius:0px;
 	border-color:#C1BFBF;
-	background-color:#051126;
+	background-color:#292929;
 	position:absolute;
-	top: 379px;
+	top: 542px;
 	width: 290px;
 	z-index:200;
 	padding:5px
@@ -409,12 +412,13 @@ blockquote blockquote blockquote  {
 	position:absolute;
 	left:0px;
 	right:0px;
+	top: 280px;
 	z-index:1;
 	height:20px;
 	line-height:20px;
-	margin-top: -8px;
+	margin-top: 0px;
     padding: 15px 0 0 10px;
-	background-color: #051126;
+	background-color: #292929;
 }
 
 #header-bottom-left .tabmenu,.tabmenu.formtab  {
@@ -430,7 +434,7 @@ blockquote blockquote blockquote  {
 }
 
 .linkinfo  {
-	background-color:#556892;
+	background-color:#293645;
 	color:#363636;
 	text-align:center;
 	padding:0px;
@@ -464,7 +468,7 @@ blockquote blockquote blockquote  {
 
 .linkinfo .shortlink  {
 	clear:both!important;
-	background:#556892;
+	background:#293645;
 	color:#FAFAFA;
 	padding:5px;
 	margin:0;
@@ -521,19 +525,19 @@ body .linklisting  {
 .linklisting .odd  {
 	overflow:hidden!important;
 	padding:0px 0px 0px 10px!important;
-	background-color:#253047;
+	background-color:#2C3A4A;
 	min-height:50px!important;
 	margin:0px;
-	border-bottom:solid 1px #E9E9E9
+	border-bottom:solid 1px #202326;
 }
 
 .linklisting .even  {
 	overflow:hidden!important;
 	padding:0px 0px 0px 10px!important;
-	background-color:#303438;
+	background-color:#293645;
 	min-height:50px!important;
 	margin:0px;
-	border-bottom:solid 1px #E9E9E9
+	border-bottom:solid 1px #202326;
 }
 
 .thing .title:visited  {
@@ -827,12 +831,12 @@ body .comment  {
 }
 
 body .comment,body .comment .comment .comment,body .comment .comment .comment .comment .comment,body .comment .comment .comment .comment .comment .comment .comment,body .comment .comment .comment .comment .comment .comment .comment .comment .comment,.res-commentBoxes .content .comment,.res-commentBoxes .content .comment .comment .comment,.res-commentBoxes .content .comment .comment .comment .comment .comment,.res-commentBoxes .content .comment .comment .comment .comment .comment .comment .comment,.res-commentBoxes .content .comment .comment .comment .comment .comment .comment .comment .comment .comment  {
-	background-color: #253047;
+	background-color: #2C3A4A;
 	border-radius:0!important
 }
 
 .comment .comment,.comment .comment .comment .comment,.comment .comment .comment .comment .comment .comment,.comment .comment .comment .comment .comment .comment .comment .comment,.comment .comment .comment .comment .comment .comment .comment .comment .comment .comment,.res-commentBoxes .content .comment .comment,.res-commentBoxes .content .comment .comment .comment .comment,.res-commentBoxes .content .comment .comment .comment .comment .comment .comment,.res-commentBoxes .content .comment .comment .comment .comment .comment .comment .comment .comment,.res-commentBoxes .content .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment  {
-	background-color: #303438;
+	background-color: #263240;
 	border-radius:0!important
 }
 
@@ -968,9 +972,9 @@ div.wiki div.toc  {
 
 body div.side  {
 	margin:35px 0 0 0;
-	border-left:solid 20px #051126;
-	border-bottom:solid 20px #051126;
-	background:url(http://a.thumbs.redditmedia.com/WyS_TiHRY3KM3XNf.png) no-repeat #1C2840;
+	border-left:solid 20px #292929;
+	border-bottom:solid 20px #292929;
+	background:url(http://a.thumbs.redditmedia.com/WyS_TiHRY3KM3XNf.png) no-repeat #293645;
 	padding-top:200px
 }
 
@@ -1016,6 +1020,9 @@ body div.side  {
 	margin-bottom:3px
 }
 
+.side a {
+	color: #949DC7;
+}
 .morelink a,.morelink a:hover  {
 	color:#FFF
 }
@@ -1207,13 +1214,17 @@ h1.redditname:hover  {
 }
 
 .side .spacer {
-	color: #DFDFDF;
+	color: #FAFAFA;
+	background-color: #293645;
+}
+
+.sidebox .subtitle {
+	color: #FAFAFA;
 }
 
 .side h2 {
 	color: #DFDFDF;
 }
-
 
 
 .flairselector.drop-choices.active  {
@@ -2855,7 +2866,7 @@ a[href="#icon-zoom-out"]::before  {
 
 .pagename a  {
 	text-indent:-999em;
-	background:url(http://a.thumbs.redditmedia.com/vuMQBo4_bdmd0dMr.png);
+	background:url(http://btelle.me/css/Iz3s8A9.png);
 	height:87px;
 	width:524px;
 	display:inline-block;
